@@ -1,0 +1,19 @@
+ 
+ 
+ Una función que dado dos números enteros a y b, me permute sus valores
+ a->b, b-> a
+
+ ejemplo:
+  a= 1, b=2
+  ---------
+
+  a= 2, b =1
+
+  Hint: usar una función void y utilizar el argumento (int &a, int &b)
+
+ void funcion(int &a, int &b){
+
+
+
+ }
+

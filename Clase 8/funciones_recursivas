@@ -1,0 +1,13 @@
+
+
+auto my_funtion(auto x){
+
+    if(x==condición){
+        return x;
+    }
+    
+    else {
+        x+=cambio;
+        return my_funtion(x);
+    }
+}
