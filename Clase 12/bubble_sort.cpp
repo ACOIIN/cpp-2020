@@ -8,27 +8,27 @@ using namespace std;
 int main() {
     OJ;
 
-    int v[]= {2, 1, 4, 3};
-    int n=4;
+    int v[] = {4, 3, 2, 1};
+    int n = 4;  // cantidad de elementos...
 
-    
     for (int i = 0; i < n; i++) {
-
-        for(int k=0; k< n; k++) {
-            cout<< v[k]<<" ";
+        bool orden = true;
+        for (int k = 0; k < n; k++) {
+            cout << v[k] << " ";
         }
-        cout<<"\n";
-                
+        cout << "\n";
 
-        for (int j = 0; j < n-1; j++) {
-            if (v[j] > v[j+1]) {
-                swap(v[j], v[j+1]);
+        for (int j = 0; j < n - 1; j++) {
+            if (v[j] > v[j + 1]) {
+                swap(v[j], v[j + 1]);
+                orden = false;
             }
         }
+        if (orden == true) break;
     }
 
-    for(int i=0; i<n; i++) cout<< v[i]<<" ";
-    cout<<"\n";
+    for (int i = 0; i < n; i++) cout << v[i] << " ";
+    cout << "\n";
 
     return 0;
 }
