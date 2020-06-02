@@ -1,0 +1,44 @@
+Busqueda Binaria
+
+Busqueda de un elemento en una lista de elementos
+
+
+V[]={2, 50, 3, 10, 6, 8, 9, 12, 1, 40}
+
+12
+
+¿Cómo encuentro la posición donde está el elemento 12?
+
+Aproximación intuitiva: ir viendo indice por indice y ver si está este.
+
+for(int i=0; i<v.size(); i++){
+    if(v[i]==12) cout<< i <<"\n"; // 1 n=largo, O(n)
+}
+
+Esto es lo mejor cuando la lista "no está ordenada"/no sigue una secuencia a priori lógica.
+
+
+Pero si está ordenadade menor a mayor podemos usar un álgoritmo de "Busqueda binaria".
+7 
+
+v[]={1, 3, 7, 10, 15, 18, 20, 25, 30}
+    l              m               r
+
+
+Nos fijamos en los dos extremos, vemos el elemento de al medio, si este es mayor que el número buscado el
+extremo derecho pasa a ser este, caso contrario el extremo izquierdo pasa a ser el elemento de al medio. 
+Iteramos esto hasta que el punto de al medio sea el elemento buscado.
+
+Buscamos el número 7.  l=0, r=8               l=0,  r=4
+M= (l+r)/2 = (0+8)/2 = 4                      M= (l+r)/2 = (0+4)/2 = 2                       
+v[]={1, 3, 7, 10, 15, 18, 20, 25, 30}  --- >  v[]={1, 3, 7, 10, 15, 18, 20, 25, 30}
+     l             M               r               l     M       r
+
+
+while(l<r){     
+    m=(l+r)/2
+    if(v[m]== 7 ) cout<<m<<"\n";
+    if(v[m] > 7 ) r=m;
+    if(v[m] < 7 ) l=m;
+}
+

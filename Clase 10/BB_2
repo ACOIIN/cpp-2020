@@ -1,0 +1,54 @@
+
+Veamos una lista de elementos donde a partir de un punto
+se tiene que todos a la derecha cumplen una propiedad.
+
+¿Mayor o igual 7?
+
+Sí             * * * *  *  *  *  *  * 
+No * * * * * *
+   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15...
+
+En busqueda binaria buscamos el punto donde está el punto 
+de ruptura, donde empiezan a ser puros "Sí".
+
+¿Mayor o igual 7?
+
+Sí             * * * *  *  *  *  *  * 
+No * * * * * *
+   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15...
+0  l             m                   r   ¿8 es mayor o igual a 7? Sí
+1  l     m       r                       9/2=4,5=4  ¿4 es mayor o igual a 7? No
+2          l m   r                       ¿6 es mayor o igual a 7? No
+3              l r                m=7  ¿7 es mayor o igual a 7? Sí
+               M  
+
+¿Mayor a 7?
+Sí               * * *  *  *  *  *  * 
+No * * * * * * *
+   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15...
+0  l             m                   r
+1  l     m       r
+2          l m   r
+3              l r    m=7      ¿7 es mayor a 7?  no l=m+1
+4                M   l=8 y r=8
+¿l y r ? 
+
+5
+(2, 4, 6,  8, 10)
+ l     m       r
+ l  m  r   ¿es 4 mayor o igual a 5?No l=m+1, r=2
+      l-r v[l]=v[2]=6 no es 5 
+     l=m+1
+     r=2 v[2]=6
+     if(v[l]==5) cout<<l
+     else cout<<-1
+
+General: 
+
+l=0, r=v.size-1
+while(l <r ){
+  m = (l+r)/2
+  if(pregunta(m)) r = m
+  else l = m+1
+}
+cout<< l o r

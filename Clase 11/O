@@ -1,0 +1,58 @@
+¿Cómo medirían si un código es "rápido" o "eficiente"?
+
+En computación tenemos:
+
+ - Tiempo de ejecución del programa...  
+
+ - Memoria que ocupa el prgrama al ejecutarse(ram).  matrices, guardar datos...
+
+ - Operaciones que realiza el programa. Código... El mejor y el peor de los casos...
+
+
+Pensemos que una computadora hace 10^8 operaciones por segundo. Luego bajo 
+esta idea vamos a ver que tiempo de ejecución está directamente ligado a la
+cantidad de operaciones que se hacen en un programa.
+
+
+Usaremos para medir la eficiencia de un algoritmo/programa, la notación Big-O.
+
+https://es.wikipedia.org/wiki/Cota_superior_asint%C3%B3tica
+
+2n=O(n^2)
+
+x input 
+
+f(x)-> Operaciones
+
+f(x)<=ALGO(x)
+
+
+
+k=5
+
+ 1, 2 ,3 ,4 , 5
+
+ 
+
+ f(x)<=O( n )
+
+
+Entonces por ejemplo la complejidad de sumar un número del 1 al 100 es...
+l + m  o(1)  es independiente del input, l y m
+l * m  o(1)
+
+n=100
+  for(int i=1; i<n ; i++){
+      sum+=i;                   => O(n) = O(100)
+  }
+
+
+  n*(n+1)/2         => O(1) <=> complejidad constante
+
+Pregunta meta: Y al momento de desarrollar el prgrama,
+  ¿Qué es mejor, usar un lenguaje donde escribas rápido y pero el 
+ tiempo de ejecución no es tan rápido como lo sería computación
+ un lenguaje más lento de escribir?
+      
+      
+      c++ vs python
