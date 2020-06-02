@@ -13,11 +13,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.setf(ios::fixed);
-    cout.precision(4);
-
+    /*
+    
     A{1, 2, 3, 4}
     0 =>{}
     1= 0001 =>{4}
@@ -26,6 +23,8 @@ int main(){
     4= 0100 =>{2}
     ....
     2^n-1= 11111 ={1,2,3...}
+
+    */
     int n;
     cin >> n;
 
