@@ -1,0 +1,53 @@
+   
+   4
+   1 2 2 4
+   1) k=0 j= n-1 true, solucion= n 
+
+   8
+   11 12 1 2 13 14 3 4
+
+   1) k=0 j= n-1, false  i=n
+   2) k=0 j= (n-1)/2 false y tambien revisamos k= (n-1)/2+1 j=n-1 false   i=n/2
+   3) k=0 j= (n-1)/4,  k= (n-1)/4+1 j= (n-1)/2, k= (n-1)/2+1 j=3*(n-1)/4 y k=3*(n-1)/4+1
+   j= n-1.  i=n/4
+   4) j=(n-1)/8, 2(n-1)/8, 3(n-1)/8, 4(n-1)/8
+
+
+   8 
+   1 2 3 4 / 4 3 2 1
+     F         F
+    
+    111 111 111 
+
+
+    int k=0, j=n-1;
+   for(int i=n ; i>=1 ; i/=2){
+       int x=0
+
+       for(int m=i; m< n; m+i){
+
+           if(f(k, j)==true){
+           cout<<j-k+1;
+           break;
+       }
+       
+       }
+
+       
+
+
+   }
+
+
+   Thanos_Tabien(k, j)
+
+    k hasta un punto j 
+    bool sorted=true
+    for(int i=k; i<=j; i++){
+        if(v[i]>v[i+1]) sorted=false
+    }
+
+
+   
+   Javi Solucion:
+   1) 
