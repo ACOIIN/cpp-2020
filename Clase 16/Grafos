@@ -1,0 +1,14 @@
+vector<int>  v->   1 23 555 111 2342
+
+
+vector<int> v[n] ->
+
+
+v[0]= 1 2 3 5 6        Representa 0, conectado con 1, 2, 3, 4, 5, 6
+v[1]=  1 4 6 7         Representa 1, contactado con 1 4 6 7
+v[2]= 12 3 5 6         ...
+v[3]= 123 12 123 
+.
+.
+.
+v[n-1] = ...

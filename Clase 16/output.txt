@@ -1,0 +1,4 @@
+Nodo 0 contectado con:... 1 
+Nodo 1 contectado con:... 0 2 3 
+Nodo 2 contectado con:... 3 1 
+Nodo 3 contectado con:... 2 1 

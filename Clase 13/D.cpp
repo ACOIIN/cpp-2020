@@ -6,17 +6,18 @@ using namespace std;
     freopen("output.txt", "w", stdout);
 
 int main() {
-    //OJ;
+    OJ;
 
-    int n, j, i = 0, a[10010];
-    for (cin >> n; i < n; i++) {
-        cin >> a[i];
+    int n, v[10010];
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> v[i];
     }
-    for (i = n; i > 0; i /= 2) {
-        for (j = 0; j < n; j += i) {
+    for (int i = n; i > 0; i /= 2) {
+        for (int j = 0; j < n; j += i) {
             /*for (int k = j; k < j + i; k++) cout << a[k] << " ";
             cout << "\n";*/
-            if (is_sorted(a + j, a + j + i)) {
+            if (is_sorted(v + j, v + j + i)) {
                 cout << i << "\n";
                 return 0;
             }
